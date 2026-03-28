@@ -1,2 +1,2 @@
+<img width="1092" height="646" alt="ArchitectureFinal" src="https://github.com/user-attachments/assets/90fad1ca-9004-4602-9f60-4009156d3df6" />
 
-<img width="1092" height="729" alt="ArchitectureFinal" src="https://github.com/user-attachments/assets/bafd6579-13d2-4a40-abe4-9340185f5563" />
