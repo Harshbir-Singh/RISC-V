@@ -19,7 +19,7 @@ module RISC_V_tb();
     rst = 1;
     #20000
 
-    $display("=== FINAL REGISTER VALUES ===");
+    $display("Register Values");
     $display("x0  = %0h", dut.Decode.RF.Register[0]);
     $display("x1  = %0h", dut.Decode.RF.Register[1]);
     $display("x2  = %0h", dut.Decode.RF.Register[2]);
