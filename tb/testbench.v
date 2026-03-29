@@ -52,9 +52,7 @@ module RISC_V_tb();
     $display("x29 = %0h", dut.Decode.RF.Register[29]);
     $display("x30 = %0h", dut.Decode.RF.Register[30]);
     $display("x31 = %0h", dut.Decode.RF.Register[31]);
-    $display("=============================");
-    $display("Total cycles = %0d", cycle_count);
-    $display("=============================");
+    
 
     $finish();
   end
