@@ -31,14 +31,12 @@ When an instruction depends on the result of a previous instruction still in the
 **2. Load-Use Hazard — Stalling**
 
 When a LOAD instruction is followed immediately by an instruction that uses the loaded value, one stall cycle is inserted:
-
     - The IF/ID and PC registers are frozen (stalled).
     - A NOP bubble is injected into the EX stage.
 
 **3. Control Hazards — Flushing**
 
 On taken branches (BEQ, BNE, BLT, etc.) and jumps (JAL, JALR):
-
     - The incorrectly fetched instructions in IF and ID stages are flushed (converted to NOPs).
     - The PC is updated to the correct target address.
 
