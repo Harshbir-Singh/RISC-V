@@ -12,9 +12,9 @@ A fully functional 5-stage pipelined RV32I RISC-V processor implemented in hardw
 1) Full RV32I Base Integer Instruction Set (37 instructions).
 2) 5-stage pipeline: IF → ID → EX → MEM → WB.
 3) Hazard Detection Unit with:
-  - Data forwarding (EX-EX and MEM-EX forwarding paths).
-  - Pipeline stalling (load-use hazard).
-  - Pipeline flushing (control hazard on branches/jumps).
+    - Data forwarding (EX-EX and MEM-EX forwarding paths).
+    - Pipeline stalling (load-use hazard).
+    - Pipeline flushing (control hazard on branches/jumps).
 4) Verified against **Ripes.me** RISC-V simulator.
 
 **Hazard Unit:**
