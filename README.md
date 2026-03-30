@@ -6,7 +6,7 @@
 
 **RV32I Pipelined Processor Core**
 
-A fully functional 5-stage pipelined RV32I RISC-V processor implemented in hardware description language, supporting all 37 instructions of the RV32I base integer ISA. The design includes a complete Hazard Detection Unit with data forwarding, stalling, and pipeline flushing — verified functionally using Ripes, a visual RISC-V simulator.
+A fully functional 5-stage pipelined RV32I RISC-V processor implemented in hardware description language, supporting all 37 instructions of the RV32I base integer ISA. The design includes a complete Hazard Detection Unit with data forwarding, stalling, and pipeline flushing; verified functionally using Ripes, a visual RISC-V simulator.
 
 **Features:**
 1) Full RV32I Base Integer Instruction Set (37 instructions).
