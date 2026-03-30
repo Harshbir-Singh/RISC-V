@@ -105,6 +105,7 @@ R-Type — Register Arithmetic:
 **Verification:**
 
 Verified for correct functional behavior using Ripes — a visual pipeline simulator for RISC-V. Test programs were written in RISC-V assembly and executed step-by-step to confirm:
+
     - Correct register writeback values
     - Proper memory read/write behavior
     - Correct branch/jump resolution and PC updates
