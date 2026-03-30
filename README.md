@@ -45,14 +45,17 @@ On taken branches (BEQ, BNE, BLT, etc.) and jumps (JAL, JALR):
 **Supported Instructions:**
 
 U-Type :
+
     - LUI: Load Upper Immediate
     - AUIPC: Add Upper Immediate to PC
   
-J-Type
+J-Type:
+
      - JAL: Jump and Link
      - JALR: Jump and Link Register
    
 B-Type — Branches:
+
     - BEQ: Branch if Equal
     - BNE: Branch if Not Equal
     - BLT: Branch if Less Than (signed)
@@ -61,6 +64,7 @@ B-Type — Branches:
     - BGEU: Branch if Greater or Equal (unsigned)
   
 I-Type — Loads:
+
     - LB: Load Byte (sign-extended)
     - LH: Load Halfword (sign-extended)
     - LW: Load Word
@@ -68,11 +72,13 @@ I-Type — Loads:
     - LHU: Load Halfword (zero-extended)
   
 S-Type — Stores:
+
     - SB: Store Byte
     - SH: Store Halfword
     - SW: Store Word
   
-I-Type — Immediate Arithmetic
+I-Type — Immediate Arithmetic:
+
     - ADDI: Add Immediate
     - SLTI: Set Less Than Immediate (signed)
     - SLTIU: Set Less Than Immediate (unsigned)
@@ -83,7 +89,8 @@ I-Type — Immediate Arithmetic
     - SRLI: Shift Right Logical Immediate
     - SRAI: Shift Right Arithmetic Immediate
   
-R-Type — Register Arithmetic
+R-Type — Register Arithmetic:
+
     - ADD: Add
     - SUB: Subtract
     - SLL: Shift Left Logical
