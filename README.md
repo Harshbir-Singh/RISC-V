@@ -17,25 +17,30 @@ A fully functional 5-stage pipelined RV32I RISC-V processor implemented in hardw
 **Hazard Unit:**
 
 The Hazard Detection Unit resolves three classes of pipeline hazards:
+
 **1. Data Hazards — Forwarding**
+
 When an instruction depends on the result of a previous instruction still in the pipeline, the forwarding unit routes the result directly to the EX stage input, avoiding unnecessary stalls.
 
 - EX → EX Forwarding: Result from the EX/MEM pipeline register forwarded to the current EX stage.
 - MEM → EX Forwarding: Result from the MEM/WB pipeline register forwarded to the current EX stage.
 
 **2. Load-Use Hazard — Stalling**
+
 When a LOAD instruction is followed immediately by an instruction that uses the loaded value, one stall cycle is inserted:
 
 - The IF/ID and PC registers are frozen (stalled).
 - A NOP bubble is injected into the EX stage.
 
 **3. Control Hazards — Flushing**
+
 On taken branches (BEQ, BNE, BLT, etc.) and jumps (JAL, JALR):
 
 - The incorrectly fetched instructions in IF and ID stages are flushed (converted to NOPs).
 - The PC is updated to the correct target address.
 
 **Supported Instructions:**
+
 U-Type :
 - LUI: Load Upper Immediate
 - AUIPC: Add Upper Immediate to PC
@@ -88,6 +93,7 @@ R-Type — Register Arithmetic
 - AND: AND
 
 **Verification:**
+
 Verified for correct functional behavior using Ripes — a visual pipeline simulator for RISC-V. Test programs were written in RISC-V assembly and executed step-by-step to confirm:
 - Correct register writeback values
 - Proper memory read/write behavior
